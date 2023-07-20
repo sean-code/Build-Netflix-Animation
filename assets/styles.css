@@ -1,0 +1,60 @@
+/* .netflixintro{
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    animation-name: zoom-in;
+    animation-delay: .5s;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    background-size: 4000px;
+    &[letter= "N"]{
+        transform-origin: 30% center;
+        .helper-1{
+            width: 19.5;
+            height: 100%;
+            left: 22.4%;
+            top: 0;
+            transform: rotate(180deg);
+            animation-name: fading-lumieres-box;
+        }
+
+    }
+} */
+
+
+
+
+/* styles.css */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+  }
+
+  .netflixintro {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    animation-name: zoom-in;
+    animation-delay: 0.5s;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    background: url('https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456') no-repeat center center;
+    background-size: contain;
+  }
+
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
