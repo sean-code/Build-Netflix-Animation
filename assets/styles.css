@@ -27,7 +27,7 @@
 
 
 /* styles.css */
-body {
+/* body {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -57,4 +57,49 @@ body {
     100% {
       transform: scale(1);
     }
+  } */
+
+
+
+
+
+  /* Level 3 */
+  /* styles.css */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
   }
+
+  .netflixintro {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    animation-name: intro-animation;
+    animation-delay: 0.5s;
+    animation-duration: 4.5s; /* Increased duration to accommodate the new animation */
+    animation-timing-function: ease-in-out; /* Use ease-in-out for smoother animation */
+    animation-fill-mode: forwards;
+    background: url('https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456') no-repeat center center;
+    background-size: contain;
+    opacity: 1; /* Start with opacity 1 for the logo to be visible initially */
+  }
+
+  @keyframes intro-animation {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2); /* Zoom out past 100% to 120% at 50% of the animation */
+      opacity: 1; /* Keep the opacity at 1 during the zoom-out phase */
+    }
+    100% {
+      transform: scale(1.5); /* Zoom out past 100% to 150% at 100% of the animation */
+      opacity: 0; /* Fade out the logo completely at the end of the animation */
+    }
+  }
+
