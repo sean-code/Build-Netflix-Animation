@@ -2,6 +2,7 @@
 
 // Level 3 Maintenance
 const netflixIntro = document.getElementById("netflixintro");
+const netflixAudio = document.getElementById("netflixAudio");
 
 function hideIntroAndRedirect() {
   netflixIntro.style.opacity = "0";
@@ -13,14 +14,17 @@ function hideIntroAndRedirect() {
   // refresh the page after 6 seconds
   setTimeout(() => {
     location.reload();
-  }, 5000);
+  }, 4000);
 }
 
 function startAnimationLoop() {
   setTimeout(() => {
     hideIntroAndRedirect();
-  }, 2000);
+  }, 5000);
 }
+
+
+netflixAudio.play();
 
 // Initial animation
 startAnimationLoop();
