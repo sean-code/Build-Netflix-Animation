@@ -76,7 +76,7 @@ body {
       opacity: 0.2; /* Decrease opacity to 0.2 at 80% of the animation */
     }
     100% {
-      transform: scale(2.4); /* Zoom out to 240% at 100% of the animation */
+      transform: scale(2.6); /* Zoom out to 240% at 100% of the animation */
       opacity: 0; /* Fade out the logo completely at the end of the animation */
     }
 
