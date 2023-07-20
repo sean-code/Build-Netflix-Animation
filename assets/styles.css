@@ -1,3 +1,6 @@
+
+/* Ideation */
+
 /* .netflixintro{
     display: block;
     position: relative;
@@ -26,45 +29,10 @@
 
 
 
+  /* Level 4 */
+
+
 /* styles.css */
-/* body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000;
-  }
-
-  .netflixintro {
-    display: block;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    animation-name: zoom-in;
-    animation-delay: 0.5s;
-    animation-duration: 3.5s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-    background: url('https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456') no-repeat center center;
-    background-size: contain;
-  }
-
-  @keyframes zoom-in {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  } */
-
-
-
-
-
-  /* Level 3 */
-  /* styles.css */
 body {
     margin: 0;
     display: flex;
@@ -89,6 +57,16 @@ body {
     opacity: 1; /* Start with opacity 1 for the logo to be visible initially */
   }
 
+  .credits {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: white;
+    display: none; /* Hide the credits initially */
+  }
+
   @keyframes intro-animation {
     0% {
       transform: scale(0);
@@ -102,4 +80,3 @@ body {
       opacity: 0; /* Fade out the logo completely at the end of the animation */
     }
   }
-
