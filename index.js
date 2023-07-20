@@ -15,8 +15,34 @@
 
 
 // level 2
+// index.js
+// const netflixIntro = document.getElementById("netflixintro");
+
+// function hideIntroAndRedirect() {
+//   netflixIntro.style.opacity = "0";
+//   setTimeout(() => {
+//     netflixIntro.style.opacity = "1"; // Reset opacity to 1 before starting the animation again
+//     startAnimationLoop(); // Start the animation loop again after 10 seconds
+//   }, 4500); // Wait for 4.5 seconds before resetting opacity to 1 (time duration of the animation)
+// }
+
+// function startAnimationLoop() {
+//   setTimeout(() => {
+//     hideIntroAndRedirect(); // Start the initial animation loop
+//   }, 10000); // Repeat the animation every 10 seconds (10000 milliseconds)
+// }
+
+// // Initial animation
+// startAnimationLoop();
 
 
+
+
+
+
+// Level 3
+
+// level 2
 // index.js
 const netflixIntro = document.getElementById("netflixintro");
 
@@ -24,11 +50,21 @@ function hideIntroAndRedirect() {
   netflixIntro.style.opacity = "0";
   setTimeout(() => {
     netflixIntro.style.opacity = "1"; // Reset opacity to 1 before starting the animation again
+    startAnimationLoop(); // Start the animation loop again after 10 seconds
   }, 4500); // Wait for 4.5 seconds before resetting opacity to 1 (time duration of the animation)
+
+  // Add this setTimeout to refresh the page after 6 seconds
+  setTimeout(() => {
+    location.reload();
+  }, 6000); // Refresh the page after 6 seconds (6000 milliseconds)
+}
+
+function startAnimationLoop() {
+  setTimeout(() => {
+    hideIntroAndRedirect(); // Start the initial animation loop
+  }, 10000); // Repeat the animation every 10 seconds (10000 milliseconds)
 }
 
 // Initial animation
-hideIntroAndRedirect();
+startAnimationLoop();
 
-// Repeat the animation every 10 seconds
-setInterval(hideIntroAndRedirect, 10000); // 10000 milliseconds = 10 seconds
