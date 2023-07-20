@@ -53,16 +53,16 @@ function hideIntroAndRedirect() {
     startAnimationLoop(); // Start the animation loop again after 10 seconds
   }, 4500); // Wait for 4.5 seconds before resetting opacity to 1 (time duration of the animation)
 
-  // Add this setTimeout to refresh the page after 6 seconds
+  // refresh the page after 6 seconds
   setTimeout(() => {
     location.reload();
-  }, 6000); // Refresh the page after 6 seconds (6000 milliseconds)
+  }, 6000);
 }
 
 function startAnimationLoop() {
   setTimeout(() => {
-    hideIntroAndRedirect(); // Start the initial animation loop
-  }, 10000); // Repeat the animation every 10 seconds (10000 milliseconds)
+    hideIntroAndRedirect();
+  }, 8000);
 }
 
 // Initial animation
